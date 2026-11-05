@@ -1,0 +1,10 @@
+{
+  "sourceRepo": "https://github.com/aliraza2025/serviceops-agent",
+  "sourceCommit": "a8140dd16da0c68da37950c8cde9d1901fffb4d3",
+  "sourceFiles": [
+    "workflow.mjs",
+    "public/domain.js",
+    "public/core.js",
+    "local.mjs"
+  ]
+}

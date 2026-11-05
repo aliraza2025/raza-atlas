@@ -1,0 +1,529 @@
+{
+  "nodes": [
+    {
+      "id": "local",
+      "label": "local.mjs",
+      "file_type": "code",
+      "source_file": "local.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "local_workflow",
+      "label": "workflow",
+      "file_type": "code",
+      "source_file": "local.mjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "local_runlocal",
+      "label": "runLocal()",
+      "file_type": "code",
+      "source_file": "local.mjs",
+      "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "local_runaudio",
+      "label": "runAudio()",
+      "file_type": "code",
+      "source_file": "local.mjs",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_core",
+      "label": "core.js",
+      "file_type": "code",
+      "source_file": "public/core.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_core_config",
+      "label": "CONFIG",
+      "file_type": "code",
+      "source_file": "public/core.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_core_present",
+      "label": "present()",
+      "file_type": "code",
+      "source_file": "public/core.js",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_core_rundemo",
+      "label": "runDemo()",
+      "file_type": "code",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain",
+      "label": "domain.js",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain_catalog",
+      "label": "CATALOG",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain_quoteservice",
+      "label": "quoteService()",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain_parserequest",
+      "label": "parseRequest()",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain_draftquote",
+      "label": "draftQuote()",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "public_domain_jobs",
+      "label": "JOBS",
+      "file_type": "code",
+      "source_file": "public/domain.js",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "workflow",
+      "label": "workflow.mjs",
+      "file_type": "code",
+      "source_file": "workflow.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "workflow_createworkflow",
+      "label": "createWorkflow()",
+      "file_type": "code",
+      "source_file": "workflow.mjs",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_node_crypto",
+      "label": "node / crypto",
+      "external": true
+    },
+    {
+      "id": "ref_langchain_langgraph",
+      "label": "langchain / langgraph",
+      "external": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "local",
+      "target": "ref_node_crypto",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "workflow",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "workflow_createworkflow",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "public_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "public_core_present",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "local_workflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "local_runlocal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local",
+      "target": "local_runaudio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_domain",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_domain_quoteservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_domain_parserequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_domain_draftquote",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_core_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_core_present",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core",
+      "target": "public_core_rundemo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core_rundemo",
+      "target": "public_core_present",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_domain",
+      "target": "public_domain_catalog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/domain.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_domain",
+      "target": "public_domain_quoteservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/domain.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_domain",
+      "target": "public_domain_parserequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/domain.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_domain",
+      "target": "public_domain_draftquote",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/domain.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_domain",
+      "target": "public_domain_jobs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/domain.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "ref_langchain_langgraph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "public_domain",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "public_domain_quoteservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "public_domain_parserequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "public_domain_draftquote",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow",
+      "target": "workflow_createworkflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "local_runlocal",
+      "target": "public_core_present",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "local.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core_rundemo",
+      "target": "public_domain_parserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core_rundemo",
+      "target": "public_domain_quoteservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "public_core_rundemo",
+      "target": "public_domain_draftquote",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/core.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow_createworkflow",
+      "target": "public_domain_parserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow_createworkflow",
+      "target": "public_domain_quoteservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "workflow_createworkflow",
+      "target": "public_domain_draftquote",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "workflow.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "metadata": {
+    "engine": "Graphify AST 0.9.103",
+    "codeOnly": true,
+    "modelTokens": 0,
+    "failedSources": [],
+    "limitations": "Static extraction; dynamic behavior and unresolved imports need review.",
+    "sourceRepo": "https://github.com/aliraza2025/serviceops-agent",
+    "sourceCommit": "a8140dd16da0c68da37950c8cde9d1901fffb4d3",
+    "sourceFiles": [
+      "workflow.mjs",
+      "public/domain.js",
+      "public/core.js",
+      "local.mjs"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "raza-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "Ali Raza",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "Raza Atlas \u2014 Explore the code behind a product decision.",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node build.mjs",
+    "test": "node --test"
+  }
+}
